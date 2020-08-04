@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+
+  <title>path1 title</title>
+
+  {% block content %}
+  <p>The content of the body element is displayed in the browser window.</p>
+<p>The content of the title element is displayed in the browser tab, in favorites and in search-engine results.</p>
+<table>
+{% for i in list %}
+  <tr>{{ i }}</tr><br>
+{% endfor %}
+  </table>
+
+{% for key, value in d1.items %}
+<p>{{ key }} - {{ value}}</p>
+{% endfor %}
+<img src="{% static 'images/trekking.jpg' %}" alt="My image" style="width:25%">
+
+{% endblock %}
+
+

@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load static %}
+ {% block title %}
+    <title>contact</title>
+    {% endblock title %}
+
+{% block content1 %}
+<h1>this is contact page</h1>
+{% for i in lista %}
+{{ i }}
+{% endfor %}
+{% for key,values in dicta.items %}
+{{ key }} - {{ values }}
+{% endfor %}
+<h1>{{ strg }}</h1>
+
+{{ form }}
+
+{% endblock content1 %}

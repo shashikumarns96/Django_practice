@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+ {% block title %}
+    <title>employee</title>
+    {% endblock title %}
+
+{% block content1 %}
+<h1>this is employee form of the get method</h1>
+
+<form>
+    {{ form.as_p }}
+    <input type="submit" value="ok">
+</form>
+
+
+{% endblock content1 %}
