@@ -1,0 +1,23 @@
+Handling Templates
+
+1. Create a folder inside project, folder name -> templates
+   Inside templates, better to create seperate folder for each app
+2. Add the templates folder in to settings
+   Object name TEMPLATES, inside this key DIRS
+
+Jinja2 template syntax
+
+
+
+file:////Users/kuthbudin/PycharmProjects/Akshara47/Akshara3/test1.html?user=ajay&passw=p123
+
+Date passed using form written in test1 -> is passed via url
+2 Kind request => GET & POST
+by default, method is GET..
+if the method is GET, data is passed via URL like a string
+DO not use GET for secured info like passw, files
+
+POST -> encrypts data and sends..
+Data is not visible in the URL
+
+action => if action not given in form, it will come to same page

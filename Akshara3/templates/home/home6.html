@@ -1,0 +1,22 @@
+{% extends 'base1.html' %}
+
+{% block title %}
+home6 title
+{% endblock %}
+
+{% block content1 %}
+  <h2>This is home6</h2>
+{% endblock %}
+
+{% block content2 %}
+  <table class="table">
+  <tr class="success"><td>Name</td><td>PAN</td><td>Marks</td></tr>
+  {% for i in x %}
+    <tr class="warning">
+    {% for j in i %}
+      <td>{{ j }}</td>
+    {% endfor %}
+    </tr>
+  {% endfor %}
+  </table>
+{% endblock %}
