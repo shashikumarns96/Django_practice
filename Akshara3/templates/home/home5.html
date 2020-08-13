@@ -1,0 +1,11 @@
+{% extends 'base1.html' %}
+
+
+{% block content2 %}
+  {% for i in x %}
+    {% for j in i %}
+      {{ j }}
+    {% endfor %}
+    <br>
+  {% endfor %}
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends 'base1.html' %}
+
+{% block title %}
+All Employees
+{% endblock %}
+
+{% block content1 %}
+  <center><h2>Show Employees</h2></center>
+{% endblock %}
+
+{% block content2 %}
+  <center>
+      <table class="table">
+        <tr class="info"><td>EID</td><td>NAME</td><td>EMPLOYER</td><td>SALARY</td><td>update</td><td>delete</td></tr>
+        {% for emp in all_emp %}
+            <tr class="warning">
+                <td>{{ emp.eid }}</td>
+                <td>{{ emp.ename }}</td>
+                <td>{{ emp.emp }}</td>
+                <td>{{ emp.esalary }}</td>
+                <td><a href="/home/update1/{{emp.eid}}/">update - {{ emp.eid }}</a></td>
+                <td><a href="/home/delete1/{{emp.ename}}/">delete - {{ emp.ename }}</a></td>
+                <!--<td><a href="/home/delete/{{ emp.eid }}/">delete</a></td>
+                <td><a href="/home/update/{{ emp.eid }}/">update</a></td>-->
+            </tr>
+        {% endfor %}
+      </table>
+  </center>
+{% endblock %}
